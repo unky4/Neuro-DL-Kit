@@ -1,8 +1,8 @@
-# NeuroDLKit
+# Neuro-DL-Kit
 
-NeuroDLKit is a version 1 deep-learning toolkit for neuroimaging-style 3D volumes, rfMRI/time-series data, tabular features, anomaly detection, and basic model interpretability. It provides a compact set of PyTorch models, dataset utilities, training helpers, and command-line scripts that can be used as a starting point for experiments or extended into larger research pipelines.
+Experimental PyTorch utilities and model prototypes for neuroimaging-style deep-learning workflows.
 
-The package is designed to be easy to install and easy to test.
+This repository contains research/prototyping code developed while exploring deep-learning approaches for biomedical imaging data. It is not a clinically validated tool and is not associated with a published deep-learning study.
 
 ## Features
 
