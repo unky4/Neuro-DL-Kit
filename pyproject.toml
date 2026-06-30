@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurodlkit"
+version = "1.0.0"
+description = "Version 1 deep-learning toolkit for 3D neuroimaging, rfMRI/time-series, tabular features, anomaly detection, and interpretability."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "NeuroDLKit contributors"}]
+dependencies = [
+    "numpy>=1.23",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+medical = ["nibabel>=5", "pandas>=2", "h5py>=3"]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.scripts]
+neurodl-generate-example = "neurodlkit.scripts.generate_example_dataset:main"
+neurodl-train-example = "neurodlkit.scripts.train_example:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["neurodlkit*"]
+
+[tool.ruff]
+line-length = 100
